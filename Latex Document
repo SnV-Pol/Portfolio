@@ -1,0 +1,196 @@
+\documentclass[a4paper ,12pt]{article}
+
+\usepackage[utf8]{inputenc}
+
+
+
+\begin{document}
+\title{Portfolio - Polaroid Originals}
+\author{Ben Mehnert}
+\date{\today}
+\maketitle
+
+
+\newpage
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+
+\newpage
+
+\section{Introduction}
+This document will serve as a portfolio of work done at Polaroid Originals. 
+
+\section{Field Service Faults done}
+
+\begin{enumerate}
+\item New 16A plug installed
+\item Reject packs at horizontal welder
+\item LCD counter fault
+\item Defect LED
+\item Lightseal motor speed too slow
+\item Faulty connector lightseal
+\item LCD counter failure
+\item Heating element faulty
+\item Welding rejecting good welds
+\item B/S feeder pilot light remains on
+\item Gripper 2 not rejecting no negative
+\item Top stop web pilot light broken
+\item Pull tab
+\item Bonus minus packs
+\item Battery canister motor speed change
+\item Rail to neg heating element bent
+\item Spring motor
+\item Light lock not turning on
+\item Digital counter
+\item Darkslide pix sensor
+\item Box conveyor motor replacement
+\item Facility servieces - Replacing wallsockets
+\item Attaching plugs to heating cartridges
+\item Fault finding - No pod tape
+\item Faulty motor contactor 
+\item Thermocouple instalations
+\item Removing cables and connections
+\item Cleaning pressure switch
+\item Motor wont start
+
+\end{enumerate}
+
+\section{Solutions to faults}
+\subsection{New 16A plug installed}
+This was my very first task which I did. The 16A 3 phase plug was broken off from a battery charger and needed a new plug. Simply replaced the plug ensuring the phases and ground connections where connected corretly.
+
+\subsection{Reject packs at horizontal welder}
+There are ultrasonic welding transducers which welds a plastic box closed.The welder was welding correctly but rejecting the packs thinking that it was not welded. There is a induction sensor placed behind the welder measuring the displacement. The sensor should read 1V at the horizontal when it is in the welding position. To test the welder you must first switch off the vertical welder so we can hear the horizontal welder go off (High pitch sound) by jogging the machine with the welder held back by a aluminume block to prevent the welder welding any packs we stop the jogging as soon as we hear the high pitch sound of the welder. Slowly releasing the aluminum block and having the welder rest on the packs we measure the voltage of the induciton sensor. Make adjustments so that the sensor is at 1V. This was not the issue as it was correct and was still rejecting packs. Once you have checked the welder and positioning and everything looks good you can use the welding monitor found in the workshop in the cabenit. The welding monitor has multiple features to record and set values. By plugging the monitor in there was an error displayed: HOR DISP TO LOW. To fix this you simple need to go to the setting and reduce the DISPLOW Number incremently and each time you set it run the machine and see if it does not reject the good packs. In case you cannot reduce the value anymore without risking the bad packs passing through a mechanical adjustment must be made to the welder. The buckets must also be checked and readjusted if nessisary. 
+
+\subsection{LCD counter fault}
+On the control panel there are multiple 8 digit LCD Counters which tally the produciton rate and various other features. The counters have a lifetime of a few years before they are shutdown and stop working. This is happening more frequent as the time of instalation of all the counters are mostly the same. Simply remove and require a new counter and bridge over the reset and 0v pins for a second to resart the counter. 
+
+\subsection{Lightseal motor speed too slow}
+The lightseal was too slow to release more film to the boxes. The motor was running to slowly to release more film in time for the next packs in production.
+The machines all had a speed increase for prodcution but did not take into account all the motors. The motor was replaced for a faster motor. Once changing the motor I needed to take all the motors sitting in the store room and test that the all worked and classify which motors should be used either for podding or light seal.
+
+\subsection{Faulty connector lightseal}
+There was a problem with the light seal not feeding and welding to the packs. After inspection we found a damaged wire to the plug  of the solenoid. The solenoid was taken out and cleaned and a new plug was put on. Everything looked okay. 
+
+\subsection{Heating element faulty}
+At the podtape unit there was an element which was not reaching its correct temperature. 
+Turning the power off and replacing the heating element for a new one solved the issue. To test wheter the element is faulty or not is to check the resistance of the element. If that does not work check thermalcouple but normaly that is not the issue if the temperature does not reach its desired setpoint.
+
+\subsection{B/S feeder pilot light remains on}
+Pilot light was staying on when there was no problem and should be turned off. 
+First thought was a relay or latch which was not reset to turn it off. Opening the schematics and turning to the index to find the pilot light which remains on and find the location of the schematics where the light is switched. 
+The SCI Card which switched the pilot light was removed and put back to reset the latch. This seemed to solve the issue. 
+
+\subsection{Gripper 2 not rejecting no negative}
+The light sensor was not detecting the film for no negative film and was not stopping the machine. The light sensor is activated on the film and is not active on the negative (Black) but when there is no negative film the light is reflected from the railing undernearth and is active. Checking the sensitivity of the sensor and adjusting accordinly and testing the machine after each adjustment. The rail where the light is reflected was seen as worn and in consistant with reflection. Putting light relfection tape undernearth seemed to help a lot. 
+
+\subsection{Top stop web pilot light broken}
+Pilot light was blown, lamp was replaced. 
+
+\subsection{Pull Tab}
+Pull tab sensor was not detecting no pulltab. Sensor was detecting the box think there was a pull tab. Sensor position was adjusted.
+
+\subsection{Bonus minus packs}
+Bonus and minus packs are refering to the amount of film placed inside a box. The issue was that there was an additional 1 to 2 packs. The sensor for the 10 count was working correctly but the mechanical timing for the counting and the accumulator was incorrect and could only be adjusted by changed the mechanical timing of the accumulator for the sensor to detect the pack earlier. The oscilloscope was used to check the timing. 
+
+\subsection{Battery canister motor speed change}
+Motor speed was too slow during change of canisiter and everytime the cansiter was changed a pack would not be placed stopping the machine. The speed of the motor was adjusted to speed up using the motor controller in the control pannel. 
+
+\subsection{Rail to neg heating element bent}
+Heating element was bent and needed to be replaced. The new element did not have a plug and the old element plug was replaced for the new one. 
+
+\subsection{Spring motor}
+The operator called in a fault saying he was smelling something burn either a switch in the area of the spring section. On further inspection the motor for the spring was constantly running while in the highest position. The limit switch was not triggered to turn the motor down. Asjustment of the limit switch arm was lowered and no further issue seemed to arrise. 
+
+\subsection{Light lock not turning on}
+The light lock for one of the zones was not turning on. The light was blown and replaced along with the light module. The problem was not fixed. The morning of the next day the light was on so I knew the light and module was working but shortly after a few minutes the light turned off again where it should be on. While looking through the schematics and locating which SCI card effected the switching of the light I begain to test the SCI cards and found that the light was not getting 110V AC and this was a result of an opto-isolator on the SCI Card which was not working. Replacing the card solved the iussue. 
+
+\subsection{Darkslide pix sensor}
+One of the sensors should turn off when in position to detect the pixel. The film was bent before the sensor effecting readings. Sensor bracket was adjusted and sensitvity. 
+
+\subsection{Box conveyor motor replacement}
+Motor was screeching. Motor was replaced and is working. Possible the gearbox of the moter or bearings are not good. 
+
+\subsection{Facility servieces - Replacing wallsockets}
+Request to fix a damaged wall socket. Locating the fuse for the sockets and checking with facility managers what is connected to the line. Since the group is connected to multiple computers and workstations it is best to hold off work until everyone has shutdown the computers when everyone is going home. always worth checking if the plugs are live or not before working on it. 
+
+\subsection{Attaching plugs to heating cartridges}
+Attaching plugs to heating cartridges to save time when heating elements need to be replaced.
+
+\subsection{Fault finding - No pod tape}
+AM44 incorectly gives no podtape error and imediatly stops after 3 count. The procedure in finding out the solution was first to check all sensors and re-adjust positions following procedures once the sensors where checked. The fault was still happening. The schematics where then checked first by seeing what causes the fault to occure which was a counter which would trigger after 3 counts had been made. we determined which signal was giving the   3 counts by recording the signals to a computer/osiliscope. after determining the signal we traced back to which SCI Card which was closest to the problem. Measuring all outputs from the relevent pins of the SCI Card we found that signal was rising before the rising edge of the hold off signal which. The timing was off. There were two possible ways to fix the solution. One was to move the sensor bracket further left to delay the rising edge of the signal so that the hold off signal would be infront preventing the counter to count unessisarly. Second solution was offestting the encoder during the hold off timing. 
+in the end the encoder was offset by 10 degrees and the problem was fixed. The right sensor  was still letting extra podtape detections through and needs to be adjusted. Management decided to let the machine run as the extra podtape almost never occures. 
+
+
+\subsection{Faulty motor contactor }
+Motor for a vacume was not always turning on when the machine started. Looking through the schematics from another company who built the machine. Found it fairly difficult to locate the problem as nothing was labeled. 
+We found the contactor for the motor and found that it was not completly switching. Simply replaced it with a new one and was working fine. 
+
+\subsection{Thermocouple instalations}
+Job was active for instalation of thermocouples for a machine which is being built. 
+Finding the correct thermocouple in the books and in the storeroom and simply fitting them and tieing them down with zip ties. 
+
+\subsection{Removing cables and connections}
+Cabinet was being removed and had cables attached which had to be removed.
+
+\subsection{Cleaning pressure switch}
+Pressure switch for a valve to display a readout was slow. Cleaned the switch/piston with WD-40 and looks better. 
+
+\subsection{Motor wont start}
+A motor was not starting. The speed controller for the motor was broken and shorted the fuse for the live wire for the motor. The one switch closest to the motor was not blown but the main fuse in the control box was. removing and replacing the SCI Card of the speed controller and replacing the fuse fixed the issue. 
+In future its best to first check all the fuses and then determin which SCI card is closest to the fuse which could cause the issue. Checking the power to the motor and then if nessisary SCI Cards and switches. 
+
+
+
+
+
+
+\section{Daily Work}
+General day can range depending if you are working on a project or working on service during the day. You would arrive to work and have a small briefing of what is going on for that day and if there are any faults that need to be addressed. For me working as an electrical technition If there is a fault at the machine the operator would first call the TD manager who would then choose who should be sent out to fix the issue. There are times where a problem can take the entire day where it is a mystery fault and trying to reverse engineer and find the solution often the fault is fairly straight forward such as adjusting sensor sensitivity and replacing broken components. There are times where you sit around doing nothing waiting for a fault to occure if you have no other projet to be working on which can be a few hours.
+
+
+
+\section{Work Enviroment}
+
+
+\section{Skills}
+\begin{enumerate}
+\item Working with SCI cards and testing cards.
+\item Fault finding
+\item Sensor adjustments and calibrations
+\item Electrical control box instalations
+\item Analysing faults and finding solutions
+\item Testing equipment
+\item Ultimo - Software
+\end{enumerate}
+
+\section{Project}
+Project assigned to me was to replace the old measureing computer used to measure displacement and timing of various units inside the websection of the assembly line. This was used to determin if adjustments needed to be made. The computer is old and not user friendly. It is difficult to read and takes time for the setup and recordings for each reading. I was put up to the task to replace it with an improved system and user friendly interface when reading results for quick and easy instructions to the operator to make adjustments. The system I have in mind will be using a Siemins s7-1200 PLC and a HMI displace along with analog induciton distance sensors to accuratly measure the displacement and timing of the units. The idea is to use the same mounting holes for the brackets of the previous recorder and if possible to have them perminantly fixed to the machine while running to record displacement and deflection over time. 
+The control system is fairly simple as there are no outputs and only analog inputs to measure and compare. The most work I expect will be the programming of the HMI and making sure the sensors are correct for the application at hand. 
+\\
+The project has been delayed for sometime since a lot of people have been sick or on holiday I am one of two electrical technicians who have been assigne to service while production goes on. 
+
+\section{What I want}
+I would like to explore a field in control systems where I would be the one researching and designing the required PID controllers for various systems working with the design on the product to the electrical or pnuematics systems. Designing circuits and modeling mechancal systems in CAD. Gaining skills in PLC Programming. 
+Working with a team or by myself to design automation systems for factories.
+
+At the moment I feel I am not getting the required skills to progress to where I want to but that may change depending on what projects Polaroid gives me. This is still early on in polaorid to get familiar of the machines which I think it is also important to build the fundemental skills in technical service and learning about the correct procedures in fault finding and working with a company but I feel that they might keep me on technical services and work mostly on electrical service on the machines which is not something I want in long term. 25th July 2019
+
+I have an intrest in building devices such as live gps trackers and CNC machines from the ground up from designing and building the schematics to creating the webservers or apps to interface with the device. I also enjoy researching a problem and exploring imporovements and testing it out. Assembly language, creating NDS Games from scratch learning about the hardware and programs which is used to create it. Home automation. 
+
+\subsection{Want to learn}
+More on PLC and Programming PLCs (Buy Starter kit to play around with)
+\\
+Learn E-Plan Software (Download Crack and practice)
+\\
+Machine Learning (Experiment with Raspberry Pi or Nvidia Mini PC) - What Programs are used
+\\
+Industrial/ Internet of things
+\\
+
+
+
+
+\end{document}
